@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preload" href="/$/jquery/dist/jquery.slim.min.js" as="script">
+<link rel="preload" href="/$/popper.js/dist/umd/popper.min.js" as="script">
+<link rel="preload" href="/$/bootstrap/dist/js/bootstrap.min.js" as="script">
+<link rel="preload" href="/bundle.js" as="script">
+
+<title>Svg Textures | Zoran Ravic</title>
+<link rel="stylesheet" href="/$/bootstrap/dist/css/bootstrap.min.css" >
+<link rel="stylesheet" href="/$/highlight.js/styles/github-gist.css" >
+<link rel="stylesheet" href="/bundle.css" >
+
+
+</head>
+<body >
+
+<div class="svg-textures">
+    <header>
+        <div class="container"><h1 id="svg-textures">Svg Textures</h1>
+<h2 id="by-zoran-ravic">By Zoran Ravic</h2>
+<p>Plain color backgrounds are boring, add some texture to them!</p>
+<p><br>Add it to your project:<br>
+<code>npm i svg-textures</code></p>
+</div>
+    </header>
+    <main>
+                <section class="examples">
+                    <div class="container">
+                        <h1>Lines</h1>
+                        <div class="row">
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine()</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  size: 10
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  orientation: &#39;vertical&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  background: &#39;#333&#39;,
+  stroke: &#39;#EB613D&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPattern({
+  content: [
+    line({ orientation: &#39;2/8&#39; }),
+    line({ orientation: &#39;6/8&#39; }),
+  ]
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  strokeWidth: 5
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  size: 40
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  orientation: &#39;3/8&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  orientation: &#39;horizontal&#39;,
+  strokeWidth: 7,
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  strokeWidth: 1
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternLine({
+  size: 40,
+  strokeWidth: 25
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPattern({
+  content: [
+    line({ orientation: &#39;3/8&#39; }),
+    line({ orientation: &#39;7/8&#39; }),
+  ]
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPattern({
+  content: [
+    line({ orientation: &#39;vertical&#39; }),
+    line({ orientation: &#39;horizontal&#39; }),
+  ]
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info">
+                    <div class="container"><p>All examples are live demos and can be edited in real time.</p>
+<p>Go ahead and try changing the color or size in an example.</p>
+<p>Examples use the default browser text editor which is very limited but should suffice.</p>
+</div>
+                </section>
+                <section class="examples">
+                    <div class="container">
+                        <h1>Circles</h1>
+                        <div class="row">
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircle()</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircle({
+  size: 10,
+  radius: 1
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircleComplement({
+  size: 50,
+  radius: 25,
+  fill: &#39;rgba(0,0,0,.13)&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircle({
+  radius: 4,
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircle({
+  size: 40
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircle({
+  radius: 4,
+  fill: &#39;transparent&#39;,
+  stroke: &#39;#333&#39;,
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircle({
+  radius: 1,
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircleComplement()</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternCircleComplement({
+  background: &#39;#282828&#39;,
+  stroke: &#39;black&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info">
+                    <div class="container"><p>All functions return Virtual Elements.</p>
+<p>You can convert them to a string or generate the HTML &amp; SVG Elements in the browser.</p>
+<p>They can also be used in React apps.</p>
+</div>
+                </section>
+                <section class="examples">
+                    <div class="container">
+                        <h1>Paths</h1>
+                        <div class="row">
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternPath({
+  path: &#39;squares&#39;,
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternPath({
+  path: &#39;crosses&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternPath({
+  size: 40,
+  path: &#39;nylon&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternPath({
+  path: &#39;woven&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternPath({
+  path: &#39;waves&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRectPatternPath({
+  path: &#39;caps&#39;
+})</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info">
+                    <div class="container"><p>You can use the generated patterns as backgrounds for your svg elements.</p>
+<p>This makes it especially handly for data visualization.</p>
+</div>
+                </section>
+                <section class="examples">
+                    <div class="container">
+                        <h1>Complex patterns</h1>
+                        <div class="row">
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  hexagonPattern()
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  squarePattern({
+    fill: &#39;#CCC&#39;,
+    background: &#39;#FFF&#39;
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  squarePattern()
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  diagonalSquarePattern({
+    size: 40,
+    fill: &#39;#444&#39;,
+    background: &#39;#FFF&#39;
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  diagonalSquarePattern()
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  cubePattern({
+    size: 50
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="info">
+                    <div class="container"><p>The project is written in TypeScript and uses the VElement library.</p>
+<p>Please support the project by giving it a star on GitHub.</p>
+</div>
+                </section>
+                <section class="examples">
+                    <div class="container">
+                        <h1>Gradients</h1>
+                        <div class="row">
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  diagonalGradient(
+    [ &#39;#F19&#39;, &#39;#0CF&#39; ]
+  )
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  verticalGradient(
+    [ &#39;#F19&#39;, &#39;#0CF&#39; ]
+  ),
+  patternLine({
+    strokeWidth: 13,
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  diagonalGradient(
+    [ &#39;#F19&#39;, &#39;#0CF&#39; ]
+  ),
+  patternLine({
+    strokeWidth: 13,
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  horizontalGradient(
+    [ &#39;#F19&#39;, &#39;#0CF&#39; ]
+  ),
+  patternLine({
+    strokeWidth: 13,
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  rdiagonalGradient(
+    [ &#39;#F19&#39;, &#39;#0CF&#39; ]
+    ),
+    patternLine({
+      strokeWidth: 13,
+    })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="example">
+                                            <div class="content">
+                                                <div class="preview"></div>
+                                                <div class="code" contenteditable="true"><pre><code class="language-js">svgRect(
+  diagonalGradient(
+    [ &#39;#F19&#39;, &#39;#0CF&#39; ]
+  ),
+  cubePattern({
+    size: 50
+  })
+)</code></pre>
+</div>
+                                                <div class="error"></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    <footer>
+        <div class="container"><h5 id="code-example">Code Example</h5>
+<p>let svg = <code>svgRectPatternLine()</code>;</p>
+<p>console.log(svg<code>.toString()</code>);</p>
+<p>div.appendChild(svg<code>.toElement()</code>);</p>
+<hr/>
+
+<h5 id="usage">Usage</h5>
+<p><code>svg()</code> generates an <code>&lt;svg&gt;</code> element and takes defs and content as options</p>
+<p><code>svgRect()</code> generates an <code>&lt;svg&gt;</code> element with a <code>&lt;rect&gt;</code> and takes a list of background patterns</p>
+<p><code>pattern()</code> generates an <code>&lt;pattern&gt;</code> element and takes content, size and background color as an options</p>
+<p>Pattern content can be created using <code>line()</code>, <code>circle()</code>, <code>circleComplement()</code>, <code>path()</code></p>
+<p>More complex patterns have their own functions:</p>
+<p><code>hexagonPattern()</code>, <code>squarePattern()</code> and <code>cubePattern()</code></p>
+<hr/>
+
+<h5 id="helper-methods">Helper methods</h5>
+<p>To minimize the amount of code you have to write several helper methods were created:</p>
+<p><code>patternLine()</code>, <code>patternCircle()</code>, <code>patternCircleComplement()</code> and <code>patternLinePath()</code></p>
+<p><code>svgRectPattern()</code> is a shorthand for <code>svgRect(pattern(options))</code></p>
+<p><code>svgRectPatternLine()</code> shorthand for an svg with a line pattern</p>
+<p><code>svgRectPatternCircle()</code> shorthand for an svg with a circle pattern</p>
+<p><code>svgRectPatternCircleComplement()</code> shorthand for an svg with a complemented circle pattern</p>
+<p><code>svgRectPatternPath()</code> shorthand for an svg with a path pattern</p>
+<hr/>
+
+<p><code>&lt;linearGradient&gt;</code> elements can be created using:</p>
+<p><code>diagonalGradient()</code>, <code>rdiagonalGradient()</code>, <code>verticalGradient()</code> and <code>horizontalGradient()</code></p>
+<p>Each of those functions takes an array of colors to use in the gradient</p>
+</div>
+    </footer>
+</div>
+
+<script src="/$/jquery/dist/jquery.slim.min.js" ></script>
+<script src="/$/popper.js/dist/umd/popper.min.js" ></script>
+<script src="/$/bootstrap/dist/js/bootstrap.min.js" ></script>
+<script src="/bundle.js" ></script>
+
+</body>
+</html>
